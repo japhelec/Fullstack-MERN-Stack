@@ -47,7 +47,7 @@ class Mailer extends helper.Mail {
 
   //send mailer to sendgrid server and tell it to help us send mails
   async send() {
-    const request = this.sgApi.emptyRequest({
+    const request = await this.sgApi.emptyRequest({
       method: "POST",
       path: "/v3/mail/send",
       body: this.toJSON(),
