@@ -1,0 +1,6 @@
+.mouseHover {
+  transition: all 0.5s;
+}
+.mouseHover:hover {
+  transform: scale(1.04);
+}
